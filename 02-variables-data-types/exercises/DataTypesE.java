@@ -48,24 +48,58 @@ public class DataTypesE
         System.out.println();
 
         // -------------------- Student Exercises --------------------
-        // 1. Create an int variable called age and assign it your age
+          // 1. Create an int variable called age and assign it your age
+        int age = 36;
+        System.out.println("My age: " + age);
 
         // 2. Create a double variable called temperature and assign it any decimal
+        double temperature = 37.5;
+        System.out.println("Temperature: " + temperature);
 
         // 3. Create a char variable called gradeLetter and assign it a letter
+        char gradeLetter = 'T';
+        System.out.println("Character: " + gradeLetter);
 
         // 4. Create a boolean variable called isJavaFun and assign true or false
+        boolean isJavaFun = true;
+        System.out.println("Is Java Fun: " + isJavaFun);
 
         // 5. Create a String variable called favoriteColor and assign it a color
+        String favoriteColor = "Yellow";
+        System.out.println("My Favorite Color: " + favoriteColor);
 
         // 6. Create an int array called numbers with at least 5 values, then print them
+        int[] numbers = {90, 85, 88, 89, 95};
+        System.out.print("Array of numbers: ");
+        for (int number : numbers)
+        {
+        System.out.print(number + " ");
+        }
+        System.out.println();
 
         // 7. Change one value inside numbers and print the updated array
+        numbers[3] = 97;
+        System.out.print("Array of numbers: ");
+        for (int number : numbers)
+        {
+        System.out.print(number + " ");
+        }
+        System.out.println();
 
         // 8. Create a String array with 3 favorite foods and print them in a loop
+        String[] favoriteFoods =  {"Pizza", "Pasta", "Ice Cream"};
+        for (int i = 0; i < favoriteFoods.length; i++) {
+        System.out.println(favoriteFoods[i]);
+        }
 
         // 9. Create two double variables, add them together, and print the result
+         double num1 = 12.5;
+         double num2 = 7.5;
+         double sum = num1 + num2;
+         System.out.println("The sum is: " + sum);
 
         // 10. Use String concatenation to print: "My name is ___ and I am ___ years old."
+         String name = "Preeti";
+         System.out.println("My name is " + name + " and I am " + age + " years old.");
     }
 }
