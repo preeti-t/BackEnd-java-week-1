@@ -23,12 +23,12 @@ That means:
 
 .class → executed by the JVM
 
-##Modern Java approach (Java 11+)
+## Modern Java approach (Java 11+)
 For small examples and learning purposes, Java can now do this in one step:
 
 java --source 21 HelloWorld.java
 
-##What happens behind the scenes?
+## What happens behind the scenes?
 Java does not skip compilation. Instead, it performs these steps automatically:
 
 the .java file is compiled temporarily
@@ -44,7 +44,7 @@ Java is still a compiled language — the compilation step is just implicit.
 This approach is meant for learning, demos, and small examples.
 Real projects still use javac, Maven, or Gradle.
 
-##What does --source mean?
+## What does --source mean?
 ```bash
 java --source 21 HelloWorld.java
 ```
@@ -75,7 +75,7 @@ switch is a fundamental Java control structure.
 Used well, it is a helpful tool.
 Used carelessly, it can become a design smell.
 
-##SRP – Single Responsibility Principle
+## SRP – Single Responsibility Principle
 
 A class or method should have one reason to change.
 
@@ -105,10 +105,10 @@ This switch:
 ➡ Multiple responsibilities
 ➡ SRP is weakened
 
-###Rule of thumb:
+### Rule of thumb:
 If case blocks start to grow, responsibilities are mixing.
 
-##OCP – Open–Closed Principle
+## OCP – Open–Closed Principle
 
 Software should be open for extension, but closed for modification.
 
@@ -128,7 +128,7 @@ modify the existing switch
 ➡ The code is not closed for modification
 ➡ Every new case is a potential source of bugs
 
-###Key idea:
+### Key idea:
 
 If adding a new behavior always requires editing old code,
 OCP warning signs appear.
@@ -166,7 +166,7 @@ Strategy or State patterns.
 A small switch is a tool.
 A growing switch is a design signal.
 
-###Project note (Calculator)
+### Project note (Calculator)
 For the calculator project:
 
 Use switch to select the operation
@@ -179,7 +179,7 @@ Bonus: refactor your solution using a modern switch expression
 e.g. using yield, ->
 
 
-##Text Blocks
+## Text Blocks
 ```java
 String message = """
 Welcome!
@@ -204,5 +204,7 @@ text.isBlank();
 text.lines();
 text.repeat(3);
 ```
+## Cognitive Complexity
+Cognitive Complexity is a measure of how hard the control flow of a method is to understand. Methods with high Cognitive Complexity will be difficult to maintain.
 
-##Java is old but not obsolete, modern but still disciplined
+## Java is old but not obsolete, modern but still disciplined

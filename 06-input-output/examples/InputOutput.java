@@ -50,7 +50,7 @@ public class InputOutput
         }
 
 
-        // 1. Reading a full line
+        // 2. Reading a full line
         String line;
         System.out.print("Enter a line of text: ");
         while ( ! scanner.hasNextLine())
@@ -61,7 +61,7 @@ public class InputOutput
         line = scanner.nextLine();
         System.out.println("You entered: " + line);
 
-        // 2. Reading an integer
+        // 3. Reading an integer
         int number = 10;
 
         boolean val = 10 > 5;
@@ -83,7 +83,7 @@ public class InputOutput
         }
         System.out.println("You entered: " + number);
 
-        // 3. Reading a double
+        //4. Reading a double
         double decimal;
         while (true)
         {
@@ -102,7 +102,7 @@ public class InputOutput
         }
         System.out.println("You entered: " + decimal);
 
-        // 4. Reading a single word
+        // 5. Reading a single word
         String word;
         while (true)
         {
@@ -120,5 +120,7 @@ public class InputOutput
         System.out.println("You entered: " + word);
 
         scanner.close();
+
+        //Note: these Java source is not following Single Responsibility Principle
     }
 }
